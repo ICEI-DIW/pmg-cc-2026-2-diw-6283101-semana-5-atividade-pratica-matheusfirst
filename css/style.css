@@ -1,6 +1,7 @@
+/* Initial CSS aplication */ 
 *
 {
-    font-family: "Alata", sans-serif;
+    font-family: "Host Grotesk", sans-serif;
     color: white;
     margin: 0;
     padding: 0;
@@ -11,11 +12,21 @@ body
     background-color: #0c0c0c;
 }
 
+h2
+{
+    text-align: center;
+    font-size: 40pt;
+    font-family: "Host Grotesk", sans-serif;
+}
+/* End of initial CSS aplication */
+
+/* Header with nav bar */
 header
 {
     display: block;
     padding: 40px;
     border-bottom: 2px solid rgb(46, 46, 46);
+    border-radius: 10px;
 }
 
 header h1
@@ -51,4 +62,95 @@ nav ul li a:hover
     background-color: #3a3a3a;
     color: rgb(255, 255, 255);
 }
+/* End of header with nav bar */
 
+/* Main banner */
+.banner
+{
+    background-color: #131313;
+    margin-bottom: 250px;
+    border-radius: 10px;
+}
+
+.banner img
+{
+    width: 100%;
+}
+
+.banner-text-content
+{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 60%;
+    padding: 50px;
+}
+
+.banner-text-content h2
+{
+    margin-top: 50px;
+    text-align: center;
+    font-size: 40pt;
+    font-family: "Host Grotesk", sans-serif;
+}
+
+.banner-text-content p
+{
+    border: 2px solid rgb(121, 121, 121);
+    border-radius: 10px;
+    text-align: justify;
+    padding: 20px;
+    margin: 10px;
+    font-size: 20pt;
+}
+/* End of main banner */
+
+/* Timeline */
+.timeline
+{
+    display: flex;
+    margin: 0 auto;
+    width: 90%;
+    overflow-x: auto;
+    gap: 1em;
+}
+
+.timeline::-webkit-scrollbar
+{
+    display: none;
+}
+
+.timeline-group
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    animation: move 50s infinite linear;
+}
+
+.timeline-card
+{
+    flex: 0 0 5em;
+}
+
+.timeline-card h2
+{
+    text-align: center;
+    font-size: 40pt;
+    font-family: "Host Grotesk", sans-serif;
+}
+
+.timeline-card p
+{
+    font-size: 120%;
+    text-align: justify;
+}
+
+@keyframes move
+{
+    from {translate: 0%;}
+    to {translate: -100%;}
+}
+
+/* End of timeline */
