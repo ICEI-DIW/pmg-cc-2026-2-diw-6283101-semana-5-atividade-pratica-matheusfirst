@@ -1,6 +1,6 @@
 # CRYPTID CATALOGUE WEB PROJECT | Responsividade Mobile
 
-![logo](/images/logo.png)
+![logo](/images/readme/banner-github.png)
 
 ## Nome: Matheus Henrique Lopes de Aquino
 
