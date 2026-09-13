@@ -68,6 +68,11 @@ body
     font-weight: bolder;
     font-family: "Alata", sans-serif;
     font-size: 50px;
+}
+
+#header-box h1 a
+{
+    text-decoration: none;
     color: #ffffff;
 }
 
