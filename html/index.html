@@ -8,18 +8,34 @@
     <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Host+Grotesk:ital,wght@0,300..800;1,300..800&display=swap">
     <link rel="stylesheet" href="/css/style.css">
+    <link rel="icon" type="image/x-icon" href="/images/logo.png">
     <title>Home - Cryptide Catalogue</title>
 </head>
 <body>
     <header>
-        <h1>CRYPTID CATALOGUE</h1>
-        <nav>
+        <h1><a href="/html/index.html">CRYPTID CATALOGUE</a></h1>
+        <nav class="desktop-menu">
             <ul>
-                <li><a href="#">Home</a></li>
                 <li><a href="#">Entertainment</a></li>
-                <li><a href="#">Discover</a></li>
+                <li><a href="/html/discover.html">Discover</a></li>
                 <li><a href="#">Purpose</a></li>
             </ul>
+        </nav>
+
+        <nav class="mobile-menu">
+            <input type="checkbox" id="sidebar-active">
+            <label for="sidebar-active" class="open-sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px" fill="#e3e3e3"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></label>
+
+            <div class="links-container">
+                <label for="sidebar-active" class="close-sidebar-button">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px" fill="#e3e3e3"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
+                </label>
+                <ul>
+                    <li><a href="#">Entertainment</a></li>
+                    <li><a href="/html/discover.html">Discover</a></li>
+                    <li><a href="#">Purpose</a></li>
+                </ul>
+            </div>
         </nav>
     </header>
 
@@ -33,50 +49,80 @@
             </div>
         </div>
 
-        <h2>TIMELINE OF CRYPTID HISTORY</h2>
+        <h2 id="timeline-title">TIMELINE OF CRYPTID HISTORY</h2>
         <!--Timeline of cryptids-->
         <section class="timeline">
             <div class="timeline-group">
                 <div class="timeline-card">
-                    <h2>TIME 1</h2>
-                    <img src="https://picsum.photos/400/400" alt="timeline1">
+                    <h2>Bernard Heuvelmans (1955)</h2>
+                    <img src="/images/timeline1.png" alt="timeline1">
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate officia corrupti deleniti amet sint sequi commodi quisquam laudantium eum id, tenetur quae delectus repellat. Excepturi vero aperiam qui itaque, veniam totam reprehenderit mollitia placeat commodi! Autem labore perferendis doloremque numquam quisquam optio quam obcaecati ipsum maxime nulla repellendus magni ullam sit quas quae, dolores dolore sunt repudiandae culpa harum in laboriosam ea id vero. Distinctio perferendis explicabo tempora deleniti sunt dolor cumque accusantium doloremque illo commodi totam culpa, quam voluptas tempore nesciunt mollitia quos in. Fugiat laborum laboriosam nisi aperiam dolor eaque, quam amet! Culpa, quod pariatur! Autem, dicta dolor.</p>
                 </div>
                 <div class="timeline-card">
-                    <h2>TIME 2</h2>
-                    <img src="https://picsum.photos/400/400" alt="timeline1">
+                    <h2>Ivan T. Sanderson (1955)</h2>
+                    <img src="/images/timeline2.png" alt="timeline1">
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate officia corrupti deleniti amet sint sequi commodi quisquam laudantium eum id, tenetur quae delectus repellat. Excepturi vero aperiam qui itaque, veniam totam reprehenderit mollitia placeat commodi! Autem labore perferendis doloremque numquam quisquam optio quam obcaecati ipsum maxime nulla repellendus magni ullam sit quas quae, dolores dolore sunt repudiandae culpa harum in laboriosam ea id vero. Distinctio perferendis explicabo tempora deleniti sunt dolor cumque accusantium doloremque illo commodi totam culpa, quam voluptas tempore nesciunt mollitia quos in. Fugiat laborum laboriosam nisi aperiam dolor eaque, quam amet! Culpa, quod pariatur! Autem, dicta dolor.</p>
                 </div>
                 <div class="timeline-card">
-                    <h2>TIME 3</h2>
-                    <img src="https://picsum.photos/400/400" alt="timeline1">
+                    <h2>On the Track of Unknown Animals (1955)</h2>
+                    <img src="/images/timeline3.png" alt="timeline1">
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate officia corrupti deleniti amet sint sequi commodi quisquam laudantium eum id, tenetur quae delectus repellat. Excepturi vero aperiam qui itaque, veniam totam reprehenderit mollitia placeat commodi! Autem labore perferendis doloremque numquam quisquam optio quam obcaecati ipsum maxime nulla repellendus magni ullam sit quas quae, dolores dolore sunt repudiandae culpa harum in laboriosam ea id vero. Distinctio perferendis explicabo tempora deleniti sunt dolor cumque accusantium doloremque illo commodi totam culpa, quam voluptas tempore nesciunt mollitia quos in. Fugiat laborum laboriosam nisi aperiam dolor eaque, quam amet! Culpa, quod pariatur! Autem, dicta dolor.</p>
                 </div>
                 <div class="timeline-card">
-                    <h2>TIME 4</h2>
-                    <img src="https://picsum.photos/400/400" alt="timeline1">
+                    <h2>Abominable Snowmen: Legend Come to Life (1961)</h2>
+                    <img src="/images/timeline4.png" alt="timeline1">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate officia corrupti deleniti amet sint sequi commodi quisquam laudantium eum id, tenetur quae delectus repellat. Excepturi vero aperiam qui itaque, veniam totam reprehenderit mollitia placeat commodi! Autem labore perferendis doloremque numquam quisquam optio quam obcaecati ipsum maxime nulla repellendus magni ullam sit quas quae, dolores dolore sunt repudiandae culpa harum in laboriosam ea id vero. Distinctio perferendis explicabo tempora deleniti sunt dolor cumque accusantium doloremque illo commodi totam culpa, quam voluptas tempore nesciunt mollitia quos in. Fugiat laborum laboriosam nisi aperiam dolor eaque, quam amet! Culpa, quod pariatur! Autem, dicta dolor.</p>
+                </div>
+                <div class="timeline-card">
+                    <h2>'Big Foot' Cryptid Footage (1967)</h2>
+                    <img src="/images/timeline5.png" alt="timeline1">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate officia corrupti deleniti amet sint sequi commodi quisquam laudantium eum id, tenetur quae delectus repellat. Excepturi vero aperiam qui itaque, veniam totam reprehenderit mollitia placeat commodi! Autem labore perferendis doloremque numquam quisquam optio quam obcaecati ipsum maxime nulla repellendus magni ullam sit quas quae, dolores dolore sunt repudiandae culpa harum in laboriosam ea id vero. Distinctio perferendis explicabo tempora deleniti sunt dolor cumque accusantium doloremque illo commodi totam culpa, quam voluptas tempore nesciunt mollitia quos in. Fugiat laborum laboriosam nisi aperiam dolor eaque, quam amet! Culpa, quod pariatur! Autem, dicta dolor.</p>
+                </div>
+                <div class="timeline-card">
+                    <h2>'Cryptid' Term Coined (1983)</h2>
+                    <img src="/images/timeline6.png" alt="timeline1">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate officia corrupti deleniti amet sint sequi commodi quisquam laudantium eum id, tenetur quae delectus repellat. Excepturi vero aperiam qui itaque, veniam totam reprehenderit mollitia placeat commodi! Autem labore perferendis doloremque numquam quisquam optio quam obcaecati ipsum maxime nulla repellendus magni ullam sit quas quae, dolores dolore sunt repudiandae culpa harum in laboriosam ea id vero. Distinctio perferendis explicabo tempora deleniti sunt dolor cumque accusantium doloremque illo commodi totam culpa, quam voluptas tempore nesciunt mollitia quos in. Fugiat laborum laboriosam nisi aperiam dolor eaque, quam amet! Culpa, quod pariatur! Autem, dicta dolor.</p>
+                </div>
+                <div class="timeline-card">
+                    <h2>Digital Popularization of 'Skinwalker' Cryptid (2024)</h2>
+                    <img src="/images/timeline7.png" alt="timeline1">
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate officia corrupti deleniti amet sint sequi commodi quisquam laudantium eum id, tenetur quae delectus repellat. Excepturi vero aperiam qui itaque, veniam totam reprehenderit mollitia placeat commodi! Autem labore perferendis doloremque numquam quisquam optio quam obcaecati ipsum maxime nulla repellendus magni ullam sit quas quae, dolores dolore sunt repudiandae culpa harum in laboriosam ea id vero. Distinctio perferendis explicabo tempora deleniti sunt dolor cumque accusantium doloremque illo commodi totam culpa, quam voluptas tempore nesciunt mollitia quos in. Fugiat laborum laboriosam nisi aperiam dolor eaque, quam amet! Culpa, quod pariatur! Autem, dicta dolor.</p>
                 </div>
             </div>
             <div aria-hidden class="timeline-group">
                 <div class="timeline-card">
-                    <h2>TIME 1</h2>
-                    <img src="https://picsum.photos/400/400" alt="timeline1">
+                    <h2>Bernard Heuvelmans (1955)</h2>
+                    <img src="/images/timeline1.png" alt="timeline1">
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate officia corrupti deleniti amet sint sequi commodi quisquam laudantium eum id, tenetur quae delectus repellat. Excepturi vero aperiam qui itaque, veniam totam reprehenderit mollitia placeat commodi! Autem labore perferendis doloremque numquam quisquam optio quam obcaecati ipsum maxime nulla repellendus magni ullam sit quas quae, dolores dolore sunt repudiandae culpa harum in laboriosam ea id vero. Distinctio perferendis explicabo tempora deleniti sunt dolor cumque accusantium doloremque illo commodi totam culpa, quam voluptas tempore nesciunt mollitia quos in. Fugiat laborum laboriosam nisi aperiam dolor eaque, quam amet! Culpa, quod pariatur! Autem, dicta dolor.</p>
                 </div>
                 <div class="timeline-card">
-                    <h2>TIME 2</h2>
-                    <img src="https://picsum.photos/400/400" alt="timeline1">
+                    <h2>Ivan T. Sanderson (1955)</h2>
+                    <img src="/images/timeline2.png" alt="timeline1">
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate officia corrupti deleniti amet sint sequi commodi quisquam laudantium eum id, tenetur quae delectus repellat. Excepturi vero aperiam qui itaque, veniam totam reprehenderit mollitia placeat commodi! Autem labore perferendis doloremque numquam quisquam optio quam obcaecati ipsum maxime nulla repellendus magni ullam sit quas quae, dolores dolore sunt repudiandae culpa harum in laboriosam ea id vero. Distinctio perferendis explicabo tempora deleniti sunt dolor cumque accusantium doloremque illo commodi totam culpa, quam voluptas tempore nesciunt mollitia quos in. Fugiat laborum laboriosam nisi aperiam dolor eaque, quam amet! Culpa, quod pariatur! Autem, dicta dolor.</p>
                 </div>
                 <div class="timeline-card">
-                    <h2>TIME 3</h2>
-                    <img src="https://picsum.photos/400/400" alt="timeline1">
+                    <h2>On the Track of Unknown Animals (1955)</h2>
+                    <img src="/images/timeline3.png" alt="timeline1">
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate officia corrupti deleniti amet sint sequi commodi quisquam laudantium eum id, tenetur quae delectus repellat. Excepturi vero aperiam qui itaque, veniam totam reprehenderit mollitia placeat commodi! Autem labore perferendis doloremque numquam quisquam optio quam obcaecati ipsum maxime nulla repellendus magni ullam sit quas quae, dolores dolore sunt repudiandae culpa harum in laboriosam ea id vero. Distinctio perferendis explicabo tempora deleniti sunt dolor cumque accusantium doloremque illo commodi totam culpa, quam voluptas tempore nesciunt mollitia quos in. Fugiat laborum laboriosam nisi aperiam dolor eaque, quam amet! Culpa, quod pariatur! Autem, dicta dolor.</p>
                 </div>
                 <div class="timeline-card">
-                    <h2>TIME 4</h2>
-                    <img src="https://picsum.photos/400/400" alt="timeline1">
+                    <h2>Abominable Snowmen: Legend Come to Life (1961)</h2>
+                    <img src="/images/timeline4.png" alt="timeline1">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate officia corrupti deleniti amet sint sequi commodi quisquam laudantium eum id, tenetur quae delectus repellat. Excepturi vero aperiam qui itaque, veniam totam reprehenderit mollitia placeat commodi! Autem labore perferendis doloremque numquam quisquam optio quam obcaecati ipsum maxime nulla repellendus magni ullam sit quas quae, dolores dolore sunt repudiandae culpa harum in laboriosam ea id vero. Distinctio perferendis explicabo tempora deleniti sunt dolor cumque accusantium doloremque illo commodi totam culpa, quam voluptas tempore nesciunt mollitia quos in. Fugiat laborum laboriosam nisi aperiam dolor eaque, quam amet! Culpa, quod pariatur! Autem, dicta dolor.</p>
+                </div>
+                <div class="timeline-card">
+                    <h2>'Big Foot' Cryptid Footage (1967)</h2>
+                    <img src="/images/timeline5.png" alt="timeline1">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate officia corrupti deleniti amet sint sequi commodi quisquam laudantium eum id, tenetur quae delectus repellat. Excepturi vero aperiam qui itaque, veniam totam reprehenderit mollitia placeat commodi! Autem labore perferendis doloremque numquam quisquam optio quam obcaecati ipsum maxime nulla repellendus magni ullam sit quas quae, dolores dolore sunt repudiandae culpa harum in laboriosam ea id vero. Distinctio perferendis explicabo tempora deleniti sunt dolor cumque accusantium doloremque illo commodi totam culpa, quam voluptas tempore nesciunt mollitia quos in. Fugiat laborum laboriosam nisi aperiam dolor eaque, quam amet! Culpa, quod pariatur! Autem, dicta dolor.</p>
+                </div>
+                <div class="timeline-card">
+                    <h2>'Cryptid' Term Coined (1983)</h2>
+                    <img src="/images/timeline6.png" alt="timeline1">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate officia corrupti deleniti amet sint sequi commodi quisquam laudantium eum id, tenetur quae delectus repellat. Excepturi vero aperiam qui itaque, veniam totam reprehenderit mollitia placeat commodi! Autem labore perferendis doloremque numquam quisquam optio quam obcaecati ipsum maxime nulla repellendus magni ullam sit quas quae, dolores dolore sunt repudiandae culpa harum in laboriosam ea id vero. Distinctio perferendis explicabo tempora deleniti sunt dolor cumque accusantium doloremque illo commodi totam culpa, quam voluptas tempore nesciunt mollitia quos in. Fugiat laborum laboriosam nisi aperiam dolor eaque, quam amet! Culpa, quod pariatur! Autem, dicta dolor.</p>
+                </div>
+                <div class="timeline-card">
+                    <h2>Digital Popularization of 'Skinwalker' Cryptid (2024)</h2>
+                    <img src="/images/timeline7.png" alt="timeline1">
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate officia corrupti deleniti amet sint sequi commodi quisquam laudantium eum id, tenetur quae delectus repellat. Excepturi vero aperiam qui itaque, veniam totam reprehenderit mollitia placeat commodi! Autem labore perferendis doloremque numquam quisquam optio quam obcaecati ipsum maxime nulla repellendus magni ullam sit quas quae, dolores dolore sunt repudiandae culpa harum in laboriosam ea id vero. Distinctio perferendis explicabo tempora deleniti sunt dolor cumque accusantium doloremque illo commodi totam culpa, quam voluptas tempore nesciunt mollitia quos in. Fugiat laborum laboriosam nisi aperiam dolor eaque, quam amet! Culpa, quod pariatur! Autem, dicta dolor.</p>
                 </div>
             </div>
@@ -86,32 +132,32 @@
             <h2>CRYPTIDS YOU NEED TO KNOW</h2>
             <div class="type-group">
                 <div class="type-card" id="box-1">
-                    <h3>Name One</h3>
-                    <img src="https://picsum.photos/400/400" alt="cryptid">
+                    <h3>Megalodon</h3>
+                    <img src="/images/monsters/Megalodon.png" alt="cryptid">
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint veritatis dolore aut nobis culpa dignissimos esse sit nam earum qui, sunt repellendus natus error blanditiis? Quibusdam minima optio molestias officiis sequi asperiores, excepturi libero amet ad quisquam non aliquam. Asperiores doloremque maxime facere tenetur, possimus vitae optio nemo. Amet, facilis.</p>
                 </div>
 
                 <div class="type-card" id="box-2">
-                    <h3>Name Two</h3>
-                    <img src="https://picsum.photos/400/400" alt="cryptid">
+                    <h3>Champ</h3>
+                    <img src="/images/monsters/Champ.png" alt="cryptid">
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint veritatis dolore aut nobis culpa dignissimos esse sit nam earum qui, sunt repellendus natus error blanditiis? Quibusdam minima optio molestias officiis sequi asperiores, excepturi libero amet ad quisquam non aliquam. Asperiores doloremque maxime facere tenetur, possimus vitae optio nemo. Amet, facilis.</p>
                 </div>
 
                 <div class="type-card" id="box-3">
-                    <h3>Name Three</h3>
-                    <img src="https://picsum.photos/400/400" alt="cryptid">
+                    <h3>Moa</h3>
+                    <img src="/images/monsters/Moa.png" alt="cryptid">
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint veritatis dolore aut nobis culpa dignissimos esse sit nam earum qui, sunt repellendus natus error blanditiis? Quibusdam minima optio molestias officiis sequi asperiores, excepturi libero amet ad quisquam non aliquam. Asperiores doloremque maxime facere tenetur, possimus vitae optio nemo. Amet, facilis.</p>
                 </div>
 
                 <div class="type-card" id="box-4">
-                    <h3>Name Four</h3>
-                    <img src="https://picsum.photos/400/400" alt="cryptid">
+                    <h3>Loch Ness Monster</h3>
+                    <img src="/images/monsters/Loch-Ness.png" alt="cryptid">
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint veritatis dolore aut nobis culpa dignissimos esse sit nam earum qui, sunt repellendus natus error blanditiis? Quibusdam minima optio molestias officiis sequi asperiores, excepturi libero amet ad quisquam non aliquam. Asperiores doloremque maxime facere tenetur, possimus vitae optio nemo. Amet, facilis.</p>
                 </div>
 
                 <div class="type-card" id="box-5">
-                    <h3>Name Five</h3>
-                    <img src="https://picsum.photos/400/400" alt="cryptid">
+                    <h3>Bigfoot</h3>
+                    <img src="/images/monsters/Bigfoot.png" alt="cryptid">
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint veritatis dolore aut nobis culpa dignissimos esse sit nam earum qui, sunt repellendus natus error blanditiis? Quibusdam minima optio molestias officiis sequi asperiores, excepturi libero amet ad quisquam non aliquam. Asperiores doloremque maxime facere tenetur, possimus vitae optio nemo. Amet, facilis.</p>
                 </div>
             </div>
@@ -124,12 +170,12 @@
 
         <section class="discover">
             <h2>DON'T FORGET THE UNKNOWN</h2>
-            <a href="#">Discover the Abyssal</a>
+            <a href="/html/discover.html">Discover the Abyssal</a>
         </section>
     </main>
 
     <footer>
-        &copy; Cryptide Catalogue | All rights reserved.
+        <p>&copy; Cryptide Catalogue | All rights reserved.</p>
     </footer>
 </body>
 </html>
